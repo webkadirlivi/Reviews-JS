@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Grand";
+    src: url(./GrandSlang-Roman.ttf);
+}
+
+@font-face {
+    font-family: "Space";
+    src: url(./SpaceGrotesk-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+
+    max-width: 700px;
+    height: 500px;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.card .img {
+    position: relative;
+}
+
+.card .img img {
+    margin-top: -70px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fa-quote-right {
+    position: absolute;
+    top: -60px;
+    left: 5px;
+    font-size: 20px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-family: "Grand";
+    letter-spacing: 2px;
+}
+
+.info h4 {
+    font-size: 16px;
+    font-family: "Space";
+    color: blueviolet;
+}
+
+.review {
+    font-size: 18px;
+    font-family: "Space";
+}
+
+.icons {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    color: blueviolet;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.random {
+    margin-bottom: -100px;
+}
+
+.random button {
+    padding: 5px 10px;
+    background-color: rgba(132, 19, 238, 0.089);
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    cursor: pointer;
+}
